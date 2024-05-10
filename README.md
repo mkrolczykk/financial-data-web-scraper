@@ -1,6 +1,6 @@
 # financial-data-web-scraper
 
-Project for the subject Automata, Languages, Calculations (AJO)
+Project for the subject Automata, Languages, Calculations (AJO).
 
 ### Example usage
 ```shell
