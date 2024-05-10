@@ -1,13 +1,19 @@
 # financial-data-web-scraper
 
+Project for the subject Automata, Languages, Calculations (AJO)
+
 ### Example usage
 ```shell
-python yahoo-scrapper.py ./yahoo_stock_ticker_test_sample.csv 1d
+python scraper-yahoo.py ./input/yahoo_stock_ticker_test_sample.csv 1d
 ```
 
-### Available intervals:
+```shell
+python scraper-etherscan.py ./input/etherscan_transactions.csv
+```
 
-- &interval=3mo - 3 months, going back until initial trading date.
-- &interval=1d  - 1 day, going back until initial trading date.
-- &interval=5m  - 5 minutes, going back 80(ish) days.
-- &interval=1m  - 1 minute, going back 4-5 days.
+### Yahoo scraper available intervals:
+
+- &interval=3mo - 3 months (data range from initial trading date)
+- &interval=1d  - 1 day (data range from initial trading date)
+- &interval=5m  - 5 minutes (data range ~ 80 days)
+- &interval=1m  - 1 minute (data range 4-5 days)

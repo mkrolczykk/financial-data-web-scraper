@@ -82,8 +82,8 @@ def get_historical_data(query_url, json_path, csv_path) -> None:
 
 
 def main(tickers_csv_filepath: str, interval: str):
-    json_output_path = f"{os.getcwd()}/stock_data/interval_{interval}/json/"
-    csv_output_path = f"{os.getcwd()}/stock_data/interval_{interval}/csv/"
+    json_output_path = f"{os.getcwd()}/output/stock_data/interval_{interval}/json/"
+    csv_output_path = f"{os.getcwd()}/output/stock_data/interval_{interval}/csv/"
 
     if not os.path.isdir(json_output_path):
         os.makedirs(json_output_path)
@@ -112,6 +112,6 @@ if __name__ == '__main__':
         stock_tickers_filepath = sys.argv[1]
         data_interval = sys.argv[2]
     else:
-        stock_tickers_filepath = "./yahoo_stock_ticker_test_sample.csv"
+        stock_tickers_filepath = "./input/yahoo_stock_ticker_test_sample.csv"
         data_interval = "3mo"    # supported intervals: 3mo, 1d, 5m, 1m
     main(tickers_csv_filepath=stock_tickers_filepath, interval=data_interval)
